@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://dodain.github.io/</id>
   <title>Dodain</title>
-  <subtitle>Dodain, Ebryx, InfoSec, Penetration Tester, Bsides Islamabad, Lead Security Engineer </subtitle>
-  <updated>2021-04-28T00:47:44+08:00</updated>
+  <subtitle>Dodain, Ebryx, InfoSec, Penetration Tester, Bsides Islamabad, Lead Security Engineer , Red Team, Cloud Security </subtitle>
+  <updated>2021-04-29T05:44:54+08:00</updated>
   <author>
     <name>Moiz Imtiaz</name>
     <uri>https://dodain.github.io/</uri>
@@ -48,9 +48,9 @@
 
 
 
-      TLDR; The mistakes done and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.
+      TLDR; The mistakes committed and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.
 
-Background: I had 4 years of pentest and red teaming experience at the time of taking the exam. I decided to start my OSCP journey in 2019, but ...
+Background: I had 4 years of pentest and red teaming experience at the time of taking the exam. I decided to start my OSCP journey in 2019,...
     </summary>
   
 

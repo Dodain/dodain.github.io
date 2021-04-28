@@ -4,6 +4,8 @@
 
 <html lang="en-US" 
   
+    mode="dark"
+  
 >
 
   <!--
@@ -27,8 +29,8 @@
 <meta property="og:title" content="Challenging the OSCP, getting free exam (retake) &amp; cracking it the smart way" />
 <meta name="author" content="Moiz Imtiaz" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="TLDR; The mistakes done and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did." />
-<meta property="og:description" content="TLDR; The mistakes done and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did." />
+<meta name="description" content="TLDR; The mistakes committed and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did." />
+<meta property="og:description" content="TLDR; The mistakes committed and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did." />
 <link rel="canonical" href="https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&-cracking-it-the-smart-way/" />
 <meta property="og:url" content="https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&-cracking-it-the-smart-way/" />
 <meta property="og:site_name" content="Dodain" />
@@ -40,7 +42,7 @@
 <meta name="twitter:creator" content="@Moiz Imtiaz" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&-cracking-it-the-smart-way/","mainEntityOfPage":{"@type":"WebPage","@id":"https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&-cracking-it-the-smart-way/"},"headline":"Challenging the OSCP, getting free exam (retake) &amp; cracking it the smart way","dateModified":"2021-03-21T07:32:00+08:00","datePublished":"2021-03-21T07:32:00+08:00","author":{"@type":"Person","name":"Moiz Imtiaz"},"description":"TLDR; The mistakes done and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&-cracking-it-the-smart-way/","mainEntityOfPage":{"@type":"WebPage","@id":"https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&-cracking-it-the-smart-way/"},"headline":"Challenging the OSCP, getting free exam (retake) &amp; cracking it the smart way","dateModified":"2021-03-21T07:32:00+08:00","datePublished":"2021-03-21T07:32:00+08:00","author":{"@type":"Person","name":"Moiz Imtiaz"},"description":"TLDR; The mistakes committed and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -155,7 +157,7 @@
     <div id="avatar">
       <a href="/" alt="avatar" class="mx-auto">
         
-        <img src="/assets/img/favicons/dp.png" alt="avatar" onerror="this.style.display='none'">
+        <img src="/assets/img/cool_boy.jpg" alt="avatar" onerror="this.style.display='none'">
       </a>
     </div>
 
@@ -215,7 +217,7 @@
 
       
       <a href="https://github.com/Dodain" aria-label="github"
-        class="order-3"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-github-alt"></i>
       </a>
@@ -226,7 +228,7 @@
 
       
       <a href="https://twitter.com/Moiz_ImtiazKhan" aria-label="twitter"
-        class="order-4"
+        
         target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -238,7 +240,7 @@
       
       <a href="
           javascript:location.href = 'mailto:' + ['moizimtiaz1','gmail.com'].join('@')" aria-label="email"
-        class="order-5"
+        
         >
         <i class="fas fa-envelope"></i>
       </a>
@@ -249,7 +251,7 @@
 
       
       <a href="https://www.linkedin.com/in/moizimtiazkhan/" aria-label="linkedin"
-        class="order-6"
+        
         >
         <i class="fab fa-linkedin"></i>
       </a>
@@ -257,159 +259,6 @@
 
     
 
-    
-      
-        <span class="icon-border order-2"></span>
-      
-
-      <span id="mode-toggle-wrapper" class="order-1">
-        <!--
-  Switch the mode between dark and light.
--->
-
-<i class="mode-toggle fas fa-adjust"></i>
-
-<script type="text/javascript">
-
-  class ModeToggle {
-    static get MODE_KEY() { return "mode"; }
-    static get DARK_MODE() { return "dark"; }
-    static get LIGHT_MODE() { return "light"; }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      var self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addListener(function() {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.updateMermaid();
-      });
-
-    } /* constructor() */
-
-
-    setDark() {
-      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      $('html').removeAttr(ModeToggle.MODE_KEY);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); }
-
-    get isSysDarkPrefer() { return this.sysDarkPrefers.matches; }
-
-    get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; }
-
-    get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; }
-
-    get hasMode() { return this.mode != null; }
-
-    get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode
-        || (!this.hasMode && this.isSysDarkPrefer) ) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    updateMermaid() {
-      if (typeof mermaid !== "undefined") {
-        let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default");
-        let config = { theme: expectedTheme };
-
-        /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
-        $(".mermaid").each(function() {
-          let svgCode = $(this).prev().children().html();
-          $(this).removeAttr("data-processed");
-          $(this).html(svgCode);
-        });
-
-        mermaid.initialize(config);
-        mermaid.init(undefined, ".mermaid");
-      }
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.updateMermaid();
-
-    } /* flipMode() */
-
-  } /* ModeToggle */
-
-  let toggle = new ModeToggle();
-
-  $(".mode-toggle").click(function() {
-
-    toggle.flipMode();
-
-  });
-
-</script>
-
-      </span>
     
 
   </div> <!-- .sidebar-bottom -->
@@ -588,7 +437,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1704 words">9 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="2200 words">12 min</span>
 
 
           <!-- page views -->
@@ -602,40 +451,40 @@
 
         
 
-        <p><strong>TLDR;</strong> The mistakes done and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.</p>
+        <p><strong>TLDR;</strong> The mistakes committed and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.</p>
 
-<p><strong>Background:</strong> I had 4 years of pentest and red teaming experience at the time of taking the exam. I decided to start my OSCP journey in 2019, but observing the  (LinkedIn feed was floaded) and then the exam writeups leaks, I did not felt that urge in OSCP and shifted my interests towards Cloud Security.</p>
+<p><strong>Background:</strong> I had 4 years of pentest and red teaming experience at the time of taking the exam. I decided to start my OSCP journey in 2019, but observing the  (LinkedIn feed was flooded) and then the exam writeups leaks, I did not felt that urge in OSCP and shifted my interests towards Cloud Security. </p>
 
 <h1 id="challenging-the-oscp">Challenging the OSCP</h1>
 
 <p>When I heard about the updated OSCP and the exam machines being rotated and are difficult as compared to previous exam machines (Reddit feed), I got intrigued and wanted to continue with OSCP. I only did 10 machines of TJ Null HTB list as pre-prep as I of the opinion that I have sufficient hold on the techniques mentioned in the course curriculum and do not need any pre-prep (M1). I registered for the OSCP exam and did 25 machines. I felt that it would be sufficient for the exam (M2) and kind of wanted to challenge how difficult the exam is, more of a craze or self-assessment.</p>
 
-<p>I did not get the chance to schedule my exam right after my labs ended and could not find a suitable near time slot because of which a gap came of 3 months (between lab end and exam date) and did not do any practice within this time frame (M3). With 3 months of gap and only 25 machines of labs done, I wanted to give OSCP exam a try.</p>
+<p>I did not get the chance to schedule my exam right after my labs ended and could not find a suitable near time slot because of which a gap came off 3 months (between lab end and exam date) and did not do any practice within this time frame (M3). With 3 months of gap and only 25 machines of labs done, I wanted to give OSCP exam a try.</p>
 
 <h1 id="exam-day">Exam Day</h1>
 
-<p>Maybe it was the excitement or the madness to challenge the OSCP I could not sleep the night before exam and went into the exam with 12 hours of no sleep (M4). I did the BOF machine in 20 minutes and had all the screenshot in the next 10 minutes. Jumped to the 20 point machine and rooted it in 3 hours. By now it was almost 16 (12+4) hours without sleep and diziness started to appear. I knew it would happen and was mentally prepared.</p>
+<p>Either it was the excitement or the madness to challenge the OSCP I could not sleep the night before the exam and went into the exam with 12 hours of no sleep (M4). I did the BOF machine in 20 minutes and had all the screenshots in the next 10 minutes. Jumped to the 20 point machine and rooted it in 3 hours. By now it was almost 16 (12+4) hours without sleep and dizziness started to appear. I knew it would happen and was mentally prepared.</p>
 
-<p>After doing some enumeration I got pointers on the other 20 and 25 point machine. I started working on the 10 point machine and spent almost 4 hours but to no avail (M5). By now it was 21 hours with out any sleep and almost half way in the exam.</p>
+<p>After doing some enumeration I got pointers on the other 20 and 25 point machines. I started working on the 10 point machine and spent almost 4 hours but to no avail (M5). By now it was 21 hours without any sleep and almost halfway in the exam.</p>
 
-<p>With no luck on the 10 pont machine though apparently I was doing everyhting right, I reached to to <a href="https://chat.offensive-security.com/"><strong>Chat</strong></a> to see if the machine was working as intended.  The Offsec representative was supportive and confirmed that the machine was not working as it should have been and they have raised it internally with the concerned offsec department and will assign me a new machine via email.</p>
+<p>With no luck on the 10 point machine, though apparently, I was doing everything right, I reached to <a href="https://chat.offensive-security.com/"><strong>Chat</strong></a> to see if the machine was working as intended.  The Offsec representative was supportive and confirmed that the machine was not working as it should have been and they have raised it internally with the concerned Offsec department and will assign me a new machine via email. </p>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/Support_chat.png" alt="OSCP EXAM Chat" />
 <em>Chat Snipper with Offsec Chat</em></p>
 
-<p>By now 22 hours have passed, thinking capability was completely negated and the exam was not as easy as I expected. I wanted to take some rest but could not as Offsec can assign me new machine anytime via email so have to keep myself awake so I can start working on the new machine as soon as I get it. I continued on the 20 and 25 points machine in parallel and made progress. It was more than 36 hours now without sleep and I dozzed off on my work station.</p>
+<p>By now 22 hours have passed, thinking capability was completely negated and the exam was not as easy as I expected. I wanted to take some rest but could not as Offsec can assign me a new machine anytime via email so have to keep myself awake so I can start working on the new machine as soon as I get it. I continued on the 20 and 25 points machine in parallel and made progress. It was more than 36 hours now without sleep and I dozed off on my workstation.</p>
 
-<p>When I woke up with 2 hours of rest,  only 90 mins were left. I reached out to Offsec again for a new machine assignee but did not get any response. Worked on the 20 and 25 point machine and within 60 minutes I had confirm initial shell attack vector. As soon as I was going to get the reverse shell, my exam time ended and at that time I realized the value of 5 marks. Sometimes all you need is 5 marks to clear the exam.</p>
+<p>When I woke up with 2 hours of rest,  only 90 mins were left. I reached out to Offsec again for a new machine assignee but did not get any response. Worked on the 20 and 25 point machine and within 60 minutes I had a confirm initial shell attack vector. As soon as I was going to get the reverse shell, my exam time ended and at that time I realized the value of 5 marks. Sometimes all you need is 5 marks to clear the exam.</p>
 
 <h2 data-toc-skip="">The Guilt</h2>
 
 <p>When the exam time ended, I was in a hysterical state and had various thoughts floating in my head:</p>
 
 <ol>
-  <li>The exam was not difficult and I was so close to clear it. I should have entered the exam with a fresh mind rather than with a 12 hours exhausted one.</li>
-  <li>If one of the machine was not being solved, I should have reached to Offsec right away rather than spending 5 hours and then reaching to Offsec. Those 5 hours were more than enough to clear the exam. (M6)</li>
-  <li>Should not have hopped between machines. Should have sticked with the 25 and the 20 pointer and could have easilly cleared the exam when I had enough pointers from the recon stage. (M7)</li>
-  <li>More than 12 hours passed and Offsec did not assign me a new machine, though I reached out to them 3 times. If they had assigned me a new machine instantly, I would have taken a power nap, and maybe cleared the exam.</li>
+  <li>The exam was not difficult and I was so close to clear it. I should have entered the exam with a fresh mind rather than with 12 hours exhausted.</li>
+  <li>If one of the machines was not being solved, I should have reached Offsec right away rather than spending 5 hours and then reaching Offsec. Those 5 hours were more than enough to clear the exam. (M6)</li>
+  <li>Should not have hopped between machines. Should have stuck with the 25 and the 20 pointers and could have easily cleared the exam when I had enough pointers from the recon stage. (M7)</li>
+  <li>More than 12 hours passed and Offsec did not assign me a new machine, though I reached out to them 3 times. If they had assigned me a new machine instantly, I would have taken a power nap, and maybe cleared the exam. </li>
 </ol>
 
 <h1 id="free-exam-retake">Free Exam Retake</h1>
@@ -646,60 +495,69 @@
 
 <h2 id="post-exam-attempt-preparation">Post exam attempt preparation</h2>
 
-<p>With 28 days time till next exam, I wanted to practice a bit so that my enumeration and time management can be improved. TryHackMe and HTB were not suitable platform to practice for exam, they can be good for pre-prep but IMHO Offsec PG provides the best exam preparation. I subscribed for one month PG and targetted to complete 3 machines per 2 days, keeping in view a full time 9 hours job. My focus this time was to improve my enumeration playbook i.e if I come across a specific port/service, what should be my goto steps and get better at time management.</p>
+<p>With 28 days’ time till the next exam, I wanted to practice a bit so that my enumeration and time management can be improved. TryHackMe and HTB were not suitable platforms to practice for the exam, they can be good for pre-prep but IMHO Offsec <a href="https://www.offensive-security.com/labs/">Proving Grounds</a> provides the best exam preparation. I subscribed for one month PG and targetted to complete 3 machines per 2 days, keeping in view a full-time 9 hours job. My focus this time was to improve my enumeration playbook i.e if I come across a specific port/service, what should be my goto steps and get better at time management.  </p>
 
 <p>In total I did 36 PG machines in 24 days and it helped me alot in preparation for the exam. The machines I did can be found <a href="https://docs.google.com/spreadsheets/d/10IRJ5qLnTVxi7YmWKRDXZKn01LvMivYEGF8pscKd6Cs/edit#gid=0">here</a>.</p>
 
 <h1 id="2nd-exam">2nd Exam</h1>
 
-<p>This time I made sure to get good amount of sleep and go into the exam with a fresh mind and do neither invest too much time on one machine nor do machine hopping. 90 mins is a decent time to give to each machine. If you are not making progress, either start again, read the scan results or move on the next machine and come back to it later. The overall the difficulty level of the exam was high compared to my first attempt and got my OSCP completion email after 2 days of report submission.</p>
+<p>This time I made sure to get a good amount of sleep and go into the exam with a fresh mind and do neither invest too much time on one machine nor do machine hopping. 90 mins is a decent time to give to each machine. If you are not making progress, either start again, read the scan results or move on to the next machine and come back to it later. Overall the difficulty level of the exam was high compared to my first attempt and got my OSCP completion email after 2 days of report submission. </p>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://i.ibb.co/j9Y39B0/OSCP-pass.png" alt="OSCP PASS" />
 <em>OSCP Certification Completion Email</em></p>
 
-<p>The joy of being an OSCP certified was peerless with lots of lesson learned and all charged up for OSWE.</p>
+<p>The joy of being OSCP certified was peerless with lots of lessons learned and all charged up for OSWE.  </p>
 
 <h1 id="cracking-oscp-smart-way">Cracking OSCP smart way</h1>
 
 <p>Rest assured the Offsec training content is unique in its own way (they won’t spoon feed you everything) and one should go through all of it. The following is in no way an alternative to Offsec training but If I had to do the OSCP journey again I would do the following:</p>
 
-<p><strong>Pre-Lab Preparation:</strong></p>
+<h2 id="pre-lab-preparation">Pre-Lab Preparation:</h2>
 <ol>
-  <li><strong>Boot2Root:</strong> Set a target to do atleast 30-40 machines from the <a href="https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159">TJ Null OSCP List</a> . The techniques are similar to that of lab and will help in better lab time utilization. Also daily watch atleast 1 walkthrough of Ippsec to with a focus to learn his thought process and appraoch towards the boxes and how he solves them. Again focus on the thought process and enumeration game.  The Youtube playlist can be found <a href="https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf">here</a> .</li>
-  <li><strong>Privildige Escalation:</strong> Do the priv-esc course along with HTB or THM so that you can practice techniques learned in the course on boot2root machines. I did Tiberuius Windows and Linux Privilidge escalation and have heard good reviewa about TCM so sharing both.
-    <ul>
-      <li>
-        <p><a href="https://www.udemy.com/course/windows-privilege-escalation/">Tib3rius Windows Priv Esc Course</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.udemy.com/course/linux-privilege-escalation/">Tib3rius Linux Priv Esc Course</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.udemy.com/course/windows-privilege-escalation-for-beginners/">Heath Adams (TCM) Windows Priv Esc Course</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.udemy.com/course/linux-privilege-escalation-for-beginners/">Heath Adams (TCM) Linux Priv Esc Course</a></p>
-      </li>
-    </ul>
-  </li>
+  <li><strong>Boot2Root:</strong> Set a target to do at least 30-40 machines from the <a href="https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159">TJ Null OSCP List</a>. The techniques are similar to that of the lab and will help in better lab time utilization. Also daily watch at least 1 walkthrough of Ippsec with a focus to learn his thought process and approach towards the boxes and how he solves them. Again focus on the thought process and enumeration game.  The Youtube playlist can be found <a href="https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf">here</a>.</li>
+  <li><strong>Privildige Escalation:</strong> Do the priv-esc course along with HTB or THM so that you can practice techniques learned in the course on boot2root machines. I did Tiberuius Windows and Linux privilege escalation and have heard good reviews about TCM so sharing both. 
+    - <a href="https://www.udemy.com/course/windows-privilege-escalation/">Tib3rius Windows Priv Esc Course</a></li>
+</ol>
+
+<p>    - <a href="https://www.udemy.com/course/linux-privilege-escalation/">Tib3rius Linux Priv Esc Course</a></p>
+
+<p>    - <a href="https://www.udemy.com/course/windows-privilege-escalation-for-beginners/">Heath Adams (TCM) Windows Priv Esc Course</a></p>
+
+<p>    - <a href="https://www.udemy.com/course/linux-privilege-escalation-for-beginners/">Heath Adams (TCM) Linux Priv Esc Course</a></p>
+
+<ol>
   <li><strong>BufferOver Flow:</strong> If you want to understand the in and outs and actually learn BOF, Pentester Academy has a good course on it. <a href="https://www.pentesteracademy.com/course?id=13">Exploiting Simple Buffer Overflows on Win32 Course Videos</a>. If you want to automate it and just grab the uper understanding and still be able to clear the 25 point BOF machines in less than 10 minutes, Tib3rius BOF Prep is a good place to practice. <a href="https://www.youtube.com/watch?v=1X2JGF_9JGM&amp;t=2779s">Youtube</a> <a href="https://tryhackme.com/room/bufferoverflowprep">THM Room</a></li>
 </ol>
 
-<p>IMO, priv-esc would be comparitevly easy after doing the above priv-esc course and the only thing you would struggle would be getting initial shell. Make sure you develop a good enumeration methodology (and that is the recipe to crack OSCP).</p>
+<p>IMO, priv-esc would be comparatively easy after doing the above priv-esc course and the only thing you would struggle with would be getting the initial shell. Make sure you develop a good enumeration methodology (and that is the recipe to crack OSCP). </p>
 
-<p><strong>OSCP Labs &amp; Exam:</strong></p>
+<h2 id="oscp-labs--exam">OSCP Labs &amp; Exam:</h2>
 
-<p>OSCP is all about challengging your limits, being humble and understanding the “Try Hard” Mantra. What students usually confuse is “Try Hard” is not banging your head against a wall rather analyzing the wall systematically, finding where to hit and then break it. Alot of OSCP students do 100+ boot2root machines butstill fail the exam, reason being, the number of machines is not an indication of the knowledge learned. After each machine, the goal should be to:</p>
+<p>OSCP is all about challenging your limits, being humble, and understanding the “Try Hard” Mantra. What students usually confuse is “Try Hard” is not banging your head against a wall rather analyzing the wall systematically, finding where to hit, and then break it. A lot of OSCP students do 100+ boot2root machines but still fail the exam, the reason being, the number of machines is not an indication of the knowledge learned. After each machine, the goal should be to:</p>
 
 <ol>
-  <li>Do an introspection of where I stand, where I am lacking and what areas do I need to further workon. Be Honest with yourself ?</li>
-  <li>The areas to work upon may not be just technical but also soft skills for e.g time management (can I do an intermediate machine within 3 hours, do I panic if I am stuck etc)?</li>
+  <li>Do an introspection of where I stand, where I am lacking, and what areas do I need to further work on. Be honest with yourself?</li>
+  <li>The areas to work upon may not be just technical but also soft skills for e.g time management (can I do an intermediate machine within 3 hours, do I panic if I am stuck, etc)?</li>
   <li>Is my enumeration skill being improved?</li>
 </ol>
 
-<p>Try to make your own notes from scrach rather than baselining on someone else. Once you have made your notes, then comapre with others to see if you are missing something. Using someone else notes as a baseline will damage your learning curve and OSCP journey experience.</p>
+<p>Try to make your own notes from scratch rather than baselining on someone else. Once you have made your notes, then compare with others to see if you are missing something. Using someone else notes as a baseline will damage your learning curve and OSCP journey experience.</p>
 
-<p>IMHO one should try doing PG machines before attempting the exam as they mimic exam machines difficulty level the most.</p>
+<p>IMHO one should try doing PG machines before attempting the exam as they mimic exam machines’ difficulty levels the most.</p>
+
+<h2 id="lessons-learned--tips">Lessons Learned &amp; Tips</h2>
+
+<ol>
+  <li>Just Do IT: Do the Pre-Lab Preparation shared and just register for the OSCP. Do not be afraid of whether you can clear it or not or are prepared enough. Just register for it, hop on the OSCP journey and you will have your shiny OSCP at the road end. </li>
+  <li>Automation it but do not kill it: (<a href="https://github.com/21y4d/nmapAutomator">nmapAutomator</a> or <a href="https://github.com/Tib3rius/AutoRecon">AutoRecon</a>) or any other automation tool is recommended as it saves your time and efforts but it should not come at the cost of your learning. One should know why the tool is running X command with Y flags when there is service Z running aka do not be a blind tool (script kiddie) operator and use automation for your benefit but it should not affect your learning.</li>
+  <li>Everyone has their own learning curve: Do not compare yours with others and enjoy your OSCP journey. I had 4 years of offensive security experience so did only 25 machines and was confident I would be able to pass the exam. For you it may not be the case so do not follow someone else track or footsteps. Learn from the team but do not mimic it blindly.</li>
+  <li>Use lab time not just to clear the exam but to learn whatever OSCP has to offer: The updated OSCP gives a touch base on Active Directory as well, though it does not come in the exam that does not mean one should not practice AD part. Utilize your time and monetary investment efficiently and get the most out of it.</li>
+  <li>Group Study: If you need the motivation to keep going, make a study group. There are tons of students in the <a href="https://discord.gg/GTfvknPG">Infosec Discord</a> you can mingle with and make a study group.</li>
+  <li>Time Management: If you are not making progress, do not spend more than 90 minutes on a single machine. Take a break, re-read your scan or start doing another machine.</li>
+  <li>Never Give up: Do not give up till the exam time is over. You may get the passing point in the very last hour so keep trying and never give up.</li>
+  <li>Chat to the rescue: Though exam machines are thoroughly tested in my case one of the machines was not working as it should have been and reaching out to chat timely gave me a free exam retake. So, if you are stuck in the exam reach out to chat and request them if they can check the box for you. You can even request them to check all 5 boxes and they are very cooperative.</li>
+  <li>PTA VPN BAN: Pakistan Telecommunication Authority put restrictions on a lot of local ISPs because of which you can not perform scans even Nmap, in Offsec labs. I have discussed it in detail <a href="https://discord.com/channels/736609006553923684/736609006553923688/829208298820993075">here</a> with all the possible solutions. If you want to set up your own lab in a VPS, I wrote a <a href="https://github.com/Dodain/OSCP_lab_tools_setup">quick setup script</a> that you can use. </li>
+</ol>
 
 
       </div>

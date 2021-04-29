@@ -4,7 +4,7 @@
   <id>https://dodain.github.io/</id>
   <title>Dodain</title>
   <subtitle>Dodain, Ebryx, InfoSec, Penetration Tester, Bsides Islamabad, Lead Security Engineer , Red Team, Cloud Security </subtitle>
-  <updated>2021-04-29T05:44:54+08:00</updated>
+  <updated>2021-04-29T07:57:35+08:00</updated>
   <author>
     <name>Moiz Imtiaz</name>
     <uri>https://dodain.github.io/</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>Challenging the OSCP, getting free exam (retake) &amp; cracking it the smart way</title>
     <link href="https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&amp;-cracking-it-the-smart-way/" rel="alternate" type="text/html" title="Challenging the OSCP, getting free exam (retake) &amp; cracking it the smart way" />
-    <published>2021-03-21T07:32:00+08:00</published>
+    <published>2021-04-29T07:32:00+08:00</published>
   
-    <updated>2021-03-21T07:32:00+08:00</updated>
+    <updated>2021-04-29T07:32:00+08:00</updated>
   
     <id>https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&amp;-cracking-it-the-smart-way/</id>
     <content src="https://dodain.github.io/posts/Challenging-the-OSCP,-getting-free-exam-(retake)-&amp;-cracking-it-the-smart-way/" />
@@ -48,7 +48,7 @@
 
 
 
-      TLDR; The mistakes committed and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.
+      TLDR: The mistakes committed and lessons learned in my OSCP journey that I could not find in other blogs and getting a free exam retake. My two cents on the updated OSCP and how it can be cracked in a smart way. The (MX) is to highlight the mistakes I did.
 
 Background: I had 4 years of pentest and red teaming experience at the time of taking the exam. I decided to start my OSCP journey in 2019,...
     </summary>
